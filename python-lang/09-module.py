@@ -27,13 +27,13 @@
 
 # 3、os.path
 # os.path.abspath(path)  返回path规范化的绝对路径。
-# os.path.basename()	获得指定文件路径的文件名字
+# os.path.basename(path)	获得指定文件路径的文件名字
 # os.path.dirname()	获得文件路径的目录名字
 # os.path.exists()	判断文件或者目录是否存在
 # os.path.isdir()	判断指定路径是否是目录
 # os.path.isfile()	判断指定路径是否是文件
 # os.path.join()	拼接路径
-# os.path.split()	路径拆分
+# os.path.split(path)	将path分割成目录和文件名二元组返回
 # os.path.splitext()	获得路径的后缀
 
 # 4、datetime
