@@ -26,6 +26,7 @@
 # os.rename()	重命名文件或者目录	os.rename('dir2', 'dir1'), 将 dir2 目录重命名为 dir1
 
 # 3、os.path
+# os.path.abspath(path)  返回path规范化的绝对路径。
 # os.path.basename()	获得指定文件路径的文件名字
 # os.path.dirname()	获得文件路径的目录名字
 # os.path.exists()	判断文件或者目录是否存在
