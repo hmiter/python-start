@@ -36,7 +36,24 @@
 # os.path.split(path)	将path分割成目录和文件名二元组返回
 # os.path.splitext()	获得路径的后缀
 
-# 4、datetime
+# 4、datetime,time
+# datetime.date：表示日期的类
+# datetime.datetime：表示日期时间的类
+# datetime.time：表示时间的类
+# datetime.timedelta：表示时间间隔，即两个时间点的间隔
+# datetime.tzinfo：时区的相关信息
+
+# time.localtime([secs])：将 secs 转换至当地时区的时间，不输入 secs 则返回当前时间
+# time.gmtime([secs])：将 secs 转换至0时区的时间，不输入 secs 则返回当前时间
+# time.strptime(string[, format])：将时间以 string 形式输入，format 默认为"%a %b %d %H:%M:%S %Y"，即标准格式，返回 time.struct_time 对象
+# time.time()：获得当前以秒表示的时间，浮点数
+# time.mktime(t)：将t转换至当地时区的时间，是 localtime 的反函数
+# time.asctime([t])：将 t 转换至当地时区的时间，不输入 t 则返回当前时间
+# time.ctime([secs])：将 secs 转换至当地时区的时间，不输入 secs 则返回当前时间
+# time.timezone 获得时区
+# time.tzname
+# time.sleep(secs) 暂停一段时间
+# time.strftime(format[, t])：将 t 以 format 形式输出，不输入 t 则用当前时间代替
 
 # 5、csv
 # collections base64
