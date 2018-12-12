@@ -29,7 +29,7 @@ def my_abs(x):
         return -x
 
 
-print my_abs(1)
+print(my_abs(1))
 
 
 # 返回多个值
@@ -39,7 +39,7 @@ def move(x, y, step, angle):
     return nx, ny
 
 x, y = move(100, 100, 60, 6)
-print x, ",", y
+print(x, ",", y)
 
 
 # 默认参数
@@ -50,7 +50,7 @@ def power(x, n=2):
         s = s * x
     return s
 
-print power(5)
+print(power(5))
 
 
 # 可变参数 ： 可变参数允许你传入0个或任意个参数，这些可变参数在函数调用时自动组装为一个tuple
@@ -60,12 +60,12 @@ def calc(*numbers):
         sum = sum + n * n
     return sum
 
-print calc(1, 2, 3)
+print(calc(1, 2, 3))
 
 
 # 关键字参数  ： 关键字参数允许你传入0个或任意个含参数名的参数，这些关键字参数在函数内部自动组装为一个dict
 def person(name, age, **kw):
-    print'name:', name, 'age:', age, 'other:', kw
+    print('name:', name, 'age:', age, 'other:', kw)
 
 person('Michael', 30)
 person('Bob', 35, city='Beijing')
@@ -73,7 +73,7 @@ person('Adam', 45, gender='M', job='Engineer')
 
 # 参数组合 ：在Python中定义函数，可以用必选参数、默认参数、可变参数和关键字参数，这4种参数都可以一起使用，或者只用其中某些，但是请注意，参数定义的顺序必须是：必选参数、默认参数、可变参数和关键字参数
 def func(a, b, c=0, *args, **kw):
-    print 'a =', a, 'b =', b, 'c =', c, 'args =', args, 'kw =', kw
+    print('a =', a, 'b =', b, 'c =', c, 'args =', args, 'kw =', kw)
 
 func(1, 2)
 func(1, 2, c=3)
@@ -86,4 +86,4 @@ def fact(n):
         return 1
     return n * fact(n - 1)
 
-print fact(5)
+print(fact(5))

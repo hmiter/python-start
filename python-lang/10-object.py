@@ -20,7 +20,7 @@ class Student(object):
         self.score = score
 
     def print_score(self):
-        print '%s: %s' % (self.name, self.score)
+        print('%s: %s' % (self.name, self.score))
 
     def get_grade(self):
         if self.score >= 90:
@@ -31,14 +31,14 @@ class Student(object):
             return 'C'
 
 bart = Student('Bart Simpson', 59)
-print bart.name
+print(bart.name)
 bart.print_score()
 
 # 继承和多态
 
 class Animal(object):
     def run(self):
-        print 'Animal is running...'
+        print('Animal is running...')
 
 class Dog(Animal):
     pass

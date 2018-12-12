@@ -6,7 +6,7 @@
 # function - 线程函数。
 # args - 传递给线程函数的参数,他必须是个tuple类型。
 # kwargs - 可选参数。
-import thread
+import _thread
 import time
 
 
@@ -16,15 +16,15 @@ def print_time(threadName, delay):
     while count < 5:
         time.sleep(delay)
         count += 1
-        print "%s: %s" % (threadName, time.ctime(time.time()))
+        print("%s: %s" % (threadName, time.ctime(time.time())))
 
 
 # 创建两个线程
 try:
-    thread.start_new_thread(print_time, ("Thread-1", 2,))
-    thread.start_new_thread(print_time, ("Thread-2", 4,))
+    _thread.start_new_thread(print_time, ("Thread-1", 2,))
+    _thread.start_new_thread(print_time, ("Thread-2", 4,))
 except:
-    print "Error: unable to start thread"
+    print("Error: unable to start thread")
 
 while 1:
     pass
