@@ -18,7 +18,8 @@
 # os.getenv()	获取系统变量的值(若变量不存在返回 None)	os.getenv('SHELL')
 # os.environ.getenv()	获取系统变量的值(若变量不存在会引发异常)	os.environ.getenv('SHELL')
 # os.listdir()	列出目录下的全部文件	os.listdir('dir'), 列出 dir 目录下的全部文件
-# os.walk()	递归地遍历指定的目录, 对于每个目录都会生成一个元组, 其中包含了目录的路径、该目录下所有的子目录以及该目录下所有文件的列表。它是一个生成器, 可以用 list() 转换成一个列表	os.walk('dir'), list(os.walk('dir'))
+# os.walk()	递归地遍历指定的目录, 对于每个目录都会生成一个元组, 其中包含了目录的路径、该目录下所有的子目录以及该目录下所
+#           有文件的列表。它是一个生成器, 可以用 list() 转换成一个列表	os.walk('dir'), list(os.walk('dir'))
 # os.makedir()	创建一个目录, 只能创建单层目录, 若创建多层目录会报错	os.makedir('dir'), 创建一个名为 dir 的目录
 # os.makedirs()	创建多层目录	os.makedirs('/dir2/dir3')
 # os.remove()	删除指定文件	os.remove('1.txt'), 删除当前目录下的 1.txt 文件
