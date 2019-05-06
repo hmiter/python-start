@@ -1,0 +1,8 @@
+tornado==3.2
+setuptools
+MySQL-python
+httpagentparser
+xmltodict
+mock
+redis
+supervisor
