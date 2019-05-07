@@ -11,6 +11,7 @@
 # sys.modules.get()	已经导入的模块列表
 # sys.getrefcount()	查看对象的引用计数
 # sys.getsizeof()	以字节（byte）为单位返回对象大小。这个对象可以是任何类型的对象。 所以内置对象都能返回
+# sys.exc_info() 如果堆栈中的任何位置没有异常处理，则返回包含三个None值的元组。否则，返回的值是（type，value，traceback）
 
 # 2、os ： 主要包含创建和管理进程或者文件系统内容(比如文件和目录)的函数
 # os.getcwd()	获取当前所在的目录	os.getcwd()
