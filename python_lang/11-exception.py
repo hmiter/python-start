@@ -6,9 +6,22 @@ try:
     fh.write("这是一个测试文件，用于测试异常!!")
 except IOError:
     print("Error: 没有找到文件或读取文件失败")
+    raise BaseException("抛出另一个Exception")
 else:
     print("内容写入文件成功")
     fh.close()
+
+# 内建错误和异常
+'''
+'ArithmeticError', 'AssertionError', 'AttributeError', 'BaseException', 'BufferError', 'BytesWarning',
+'DeprecationWarning', 'EOFError', 'Ellipsis', 'EnvironmentError', 'Exception', 'False', 'FloatingPointError',
+'FutureWarning', 'GeneratorExit', 'IOError', 'ImportError', 'ImportWarning', 'IndentationError', 'IndexError',
+'KeyError', 'KeyboardInterrupt', 'LookupError', 'MemoryError', 'NameError', 'None', 'NotImplemented',
+'NotImplementedError', 'OSError', 'OverflowError', 'PendingDeprecationWarning', 'ReferenceError', 'RuntimeError',
+'RuntimeWarning', 'StandardError', 'StopIteration', 'SyntaxError', 'SyntaxWarning', 'SystemError', 'SystemExit',
+'TabError', 'True', 'TypeError', 'UnboundLocalError', 'UnicodeDecodeError', 'UnicodeEncodeError', 'UnicodeError',
+'UnicodeTranslateError', 'UnicodeWarning', 'UserWarning', 'ValueError', 'Warning', 'WindowsError', 'ZeroDivisionError',
+'''
 
 # 一：traceback说明
 # 该模块提供了一个标准接口来提取，格式化和打印Python程序的堆栈跟踪。它完全模仿Python解释器在打印堆栈跟踪时的行为。
