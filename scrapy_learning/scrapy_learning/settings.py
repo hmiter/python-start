@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+import datetime
 # Scrapy settings for scrapy_learning project
 #
 # For simplicity, this file contains only settings considered important or
@@ -34,16 +34,17 @@ ROBOTSTXT_OBEY = True
 #CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
-#COOKIES_ENABLED = False
+COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
 
 # Override the default request headers:
-#DEFAULT_REQUEST_HEADERS = {
-#   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-#   'Accept-Language': 'en',
-#}
+DEFAULT_REQUEST_HEADERS = {
+  'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'Accept-Language': 'en',
+  'cookie': 'PHPSESSID=e7dh70nvld2ip26ue85oo90a55',
+}
 
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
@@ -69,7 +70,9 @@ ROBOTSTXT_OBEY = True
 #    'scrapy_learning.pipelines.ScrapyLearningPipeline': 300,
 #}
 # 设置处理返回数据的类及执行优先级
-ITEM_PIPELINES = {'scrapy_learning.pipelines.PicPipeline':100}
+ITEM_PIPELINES = {'scrapy_learning.pipelines.GamePipeline':100}
+# ITEM_PIPELINES = {'scrapy_learning.pipelines.PicPipeline':100}
+# ITEM_PIPELINES = {'scrapy_learning.pipelines.CytyPipeline':200}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
@@ -91,3 +94,8 @@ ITEM_PIPELINES = {'scrapy_learning.pipelines.PicPipeline':100}
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+LOG_LEVEL = 'DEBUG'
+to_day = datetime.datetime.now()
+log_file_path = 'log/scrapy_{}_{}_{}.log'.format(to_day.year, to_day.month, to_day.day)
+LOG_FILE = log_file_path
