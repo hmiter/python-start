@@ -41,13 +41,15 @@ print(sys.version_info)
 # os.path.split(path)	将path分割成目录和文件名二元组返回
 # os.path.splitext()	获得路径的后缀
 
-# 4、datetime,time
+# 4、datetime,data,time
 import datetime,time
-# datetime.date：表示日期的类
 # datetime.datetime：表示日期时间的类
+# datetime.date：表示日期的类
 # datetime.time：表示时间的类
 # datetime.timedelta：表示时间间隔，即两个时间点的间隔
 # datetime.tzinfo：时区的相关信息
+
+print str(datetime.date.today())
 
 print(time.time())
 # time.time()：获得当前以秒表示的时间，浮点数
@@ -117,6 +119,8 @@ print("sha512加密结果:",res)
 # random.sample(sequence, k) 从序列中随机获取指定长度的片断
 
 # 8、string模块
+str1 = "fdfd"
+print str[0:5]  # 截取字符串
 # str.capitalize() 把字符串的第一个字符大写
 # str.center(width) 返回一个原字符串居中，并使用空格填充到width长度的新字符串
 # str.ljust(width) 返回一个原字符串左对齐，用空格填充到指定长度的新字符串
