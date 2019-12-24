@@ -30,8 +30,20 @@ print(classmates)
 
 # 2、tuple 元组 : tuple和list非常类似，但是tuple一旦初始化就不能修改
 # 没有append()，insert()这样的方法。其他获取元素的方法和list是一样的
-classmates2 = ('Michael', 'Bob', 'Tracy')
+classmates2 = ('Michael', 'Bob', 'Tracy1')
+classmates3 = ('Michael', 'Bob', 'Tracy')
 print(classmates2)
+
+# 比较两个元组元素。
+cmp(classmates2, classmates3)
+# 计算元组元素个数。
+len(classmates2)
+# 返回元组中元素最大值。
+max(classmates2)
+# 返回元组中元素最小值。
+min(classmates2)
+# 将列表转换为元组。
+tuple(classmates)
 
 # 3、dict 字典 ：在其他语言中也称为map，使用键-值（key-value）存储，具有极快的查找速度。
 d = {'Michael': 95, 'Bob': 75, 'Tracy': 85}
